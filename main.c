@@ -22,7 +22,7 @@ int main() {
 
     do {
         printf("\n      MENU      \n");
-        printf("1. Mostrar total del inventario\n");
+        printf("1. Mostrar el valor total del inventario\n");
         printf("2. Mostrar producto mas caro\n");
         printf("3. Mostrar producto mas barato\n");
         printf("4. Mostrar precio promedio\n");
