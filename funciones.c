@@ -6,10 +6,20 @@ int ingresarProductos(char nombres[10][50], float precios[10], int cantidades[10
     for (int i = 0; i < n; i++) {
         printf("Nombre del producto %d: ", i + 1);
         scanf("%s", nombres[i]);
+        do{
         printf("Precio del producto %d: ", i + 1);
         scanf("%f", &precios[i]);
+        if (precios[i] < 0){
+            printf("solo ingrese precios positivos\n");
+        }
+        }while (precios[i] < 0);
+        do{
         printf("Cantidad del producto %d: ", i + 1);
         scanf("%d", &cantidades[i]);
+        if (cantidades[i] < 0){
+            printf("solo ingrese inventario positivo\n");
+        }
+        }while (cantidades[i] < 0);
     }
     return n;
 }
